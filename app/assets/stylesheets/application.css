@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header{
+  height: 100px;
+  width: 90vw;
+  background-color: lightgreen;
+  margin: 0 auto;
+  padding: 25px 0;
+  position: relative;
+}
+
+.header__bar{
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.grid-6{
+  margin: 0;
+}
+
+.user-action_box{
+  position: absolute;
+  right: 0;
+  top: 70px;
+  display: flex;
+  padding: 0 20px;
+}
+
+
+.p{
+  margin: 0 10px;
+}
