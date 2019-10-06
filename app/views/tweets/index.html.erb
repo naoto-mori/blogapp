@@ -1,26 +1,33 @@
 
-  <div class="contents row" >
+  <div class="contents" >
     <% @tweets.each do |tweet| %>
       <div class="content_post">
-        <%= tweet.text %>
-        <span class="name">
-          <a href="">
+        <div class="name-box">
+          <span class="name">
             <%= tweet.user.nickname %>
-          </a>
-        </span>
+          </span>
+        </div>
+        <p class="tweet_box"> <%= tweet.text %> </p>
         <% if user_signed_in? && current_user.id == tweet.user_id %>
           <div class="more">
             <ul class="more_list">
-              <li>
-               <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
-              </li>
-              <li>
-                <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
-              </li>
+              <div clas="edit-box">
+                <li>
+                <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
+                </li>
+              </div>
+              <div class="delete-box">
+                <li>
+                  <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+                </li>
+              </div>
             </ul>
           </div>
         <% end %>
       </div>
     <% end %>
-  <%= paginate(@tweets) %>
+  <div class="paginate-box">
+    <%= paginate(@tweets) %>
   </div>
+ <div class="box">
+ </div>

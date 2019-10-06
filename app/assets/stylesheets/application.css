@@ -33,3 +33,50 @@
   display: flex;
   padding: 0 20px;
 }
+
+.contents{
+  height: calc(100vh - 120px);
+  width: 75vw;
+  background-color: lightblue;
+  margin: 5px auto 0;
+  padding: 30px 30px;
+  border-radius: 50px;
+  overflow: scroll;
+}
+
+.content_post{
+  min-height: 100px;
+  width: 60%;
+  margin: 0 auto 15px;
+  border: solid rgb(127, 187, 125);
+  border-radius: 20px;
+}
+
+.name-box{
+  margin-left: 20px;
+}
+
+.tweet_box{
+  min-height: 75px;
+  width: 90%;
+  background-color: #fff;
+  margin: 5px auto 5px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+}
+
+.more_list{
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.delete-box{
+  margin-left: 20px;
+}
+
+.paginate-box{
+  text-align: center;
+  margin: 0 auto;
+}
