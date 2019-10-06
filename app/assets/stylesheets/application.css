@@ -8,18 +8,22 @@
   width: 90vw;
   background-color: lightgreen;
   margin: 0 auto;
-  padding: 25px 0;
   position: relative;
+  border-radius: 20px;
 }
 
 .header__bar{
   height: 50px;
   width: 200px;
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
   margin: 0 auto;
 }
 
 .grid-6{
   margin: 0;
+  font-weight: bold;
 }
 
 .user-action_box{
@@ -28,9 +32,4 @@
   top: 70px;
   display: flex;
   padding: 0 20px;
-}
-
-
-.p{
-  margin: 0 10px;
 }
